@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/img.css">
+</head>
+<body>
+      <div class="container">
+        <header>
+            <h1>image gallery</h1>
+        </header> 
+        
+
+
+        <div class="image-container">
+            <div class="image"><img src="photo\madu01.jpg"></div>
+            <div class="image"><img src="photo\madu2.jpg"></div>
+            <div class="image"><img src="photo\madu3.jpg"></div>
+            <div class="image"><img src="photo\madu4.jpg"></div>
+            <div class="image"><img src="photo\madu5.jpg"></div>
+            <div class="image"><img src="photo\madu6.jpg"></div>
+            <div class="image"><img src="photo\madu7.jpg"></div>
+            <div class="image"><img src="photo\madu8.jpg"></div>
+            <div class="image"><img src="photo\madu9.jpg"></div>
+            <div class="image"><img src="photo\madu10.jpg"></div>
+            <div class="image"><img src="photo\madu11.jpg"></div>
+            <div class="image"><img src="photo\madu12.jpg"></div>
+            <div class="image"><img src="photo\madu13.jpg"></div>
+            <div class="image"><img src="photo\madu14.jpg"></div>
+            <div class="image"><img src="photo\madu15.jpg"></div>
+        </div>
+           <div class="popup-image">
+            <span>&times;</span>
+            <img src="two.jpg" alt="">
+           </div>
+
+      </div>
+    
+      <footer>
+        <h5> contact me on whatsapp<br>
+            0714144013
+           </h5>
+      </footer>
+      <script>
+        document.querySelectorAll('.image-container img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.popup-image span').onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'none';   
+        }
+      </script>
+
+</body>
+</html>

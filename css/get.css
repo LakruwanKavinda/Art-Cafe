@@ -1,0 +1,26 @@
+header{
+    background-color: rgb(247, 227, 201);
+    text-align: center;
+}
+main{
+    margin-left: 200px;
+}
+footer{
+    background-color: rgb(196, 202, 202);
+    text-align: center;
+}
+#reset{
+    text-align: right;
+    margin-right: 200px;
+}
+#sub{
+    background-color: rgb(224, 182, 82);
+    cursor: pointer;
+}
+#rst{
+    cursor: pointer;
+    background-color: rgb(192, 189, 189);
+}
+#file{
+    cursor: pointer;
+}
